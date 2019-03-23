@@ -119,7 +119,7 @@ Max: + 7.9 X 10^(28)
 ```
 
 
-## Strings and Chars
+## Chars
 
 char. 2 bytes. Define it using single quotes. 
 
