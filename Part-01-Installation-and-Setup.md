@@ -7,12 +7,17 @@ Set Path Environment variable to the Mono bin directory.
 First program:
 
 ```
+// namespace
 using System;
 
+// class
 public class HelloWorld
 {
+    // Main() method
     static public void Main ()
     {
+        // statement
+        // semi-colon is end of line
         Console.WriteLine ("Hello World!");
     }
 }
