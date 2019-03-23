@@ -102,6 +102,7 @@ public class Variables
         Console.WriteLine ("My float is: {0}", myFloat);
     }
 }
+```
 
 double. Double precision floating point number. 8 bytes. Precision of 15-16 digits. 
 
@@ -133,6 +134,83 @@ public class Variables
     }
 }
 ```
+
+## ASCII Table
+
+The ASCII table contains all characters and their mappings. 
+
+* [ASCII Table](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html)
+* [Extended ASCII Table](https://www.ascii-code.com/)
+
+If we define an int as 'A', for example, we'll get its ASCII table value. For instance:
+
+```
+using System;
+public class Variables
+{
+    static public void Main ()
+    {
+        int number = 'A';
+        char myCharacter = 'A';
+        Console.WriteLine ("My valuess are {0} and {1}", number, myCharacter);
+    }
+}
+```
+
+This returns:
+
+```
+My valuess are 65 and A
+```
+
+This is because 'A' is assigned the value of 65 in the ASCII table. We can also use the ASCII value to define a character by using typecasting such as in the example below:
+
+```
+using System;
+public class Variables
+{
+    static public void Main ()
+    {
+        int number = 'A';
+        char myCharacter = (char) 65;
+        Console.WriteLine ("My valuess are {0} and {1}", number, myCharacter);
+    }
+}
+```
+
+## Strings
+
+Strings are defined with double-quote marks. We can find the length of a string with .Length. Example below:
+
+```
+using System;
+public class StringExplorer
+{
+    static public void Main ()
+    {
+        string s = "Alpaca";
+        Console.WriteLine ("{0}", s);
+        Console.WriteLine ("{0}", s.Length);
+    }
+}
+```
+
+Creating a prompt with strings using Console.ReadLine():
+
+```
+using System;
+public class StringExplorer
+{
+    static public void Main ()
+    {
+        string name;
+        Console.WriteLine("Hello, what is your name?: ");
+        name = Console.ReadLine();
+        Console.WriteLine("Hello {0}, are you a llama?", name);
+    }
+}
+```
+
 
 ## Resources
 
